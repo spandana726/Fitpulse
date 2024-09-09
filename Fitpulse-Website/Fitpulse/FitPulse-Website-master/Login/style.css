@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; /* Include padding and border in element width/height */
+  }
+  
+  body {
+	background: rgb(252, 218, 218);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh; /* Make sure the body covers the entire viewport height */
+	font-family: 'Poppins', sans-serif;
+  }
+
+  .container {
+	position: fixed;
+	margin-top: 20px; /* Adjust margin for smaller screens */
+	width: 100%;
+	max-width: 450px; /* Set a maximum width for larger screens */
+	background: rgba(255, 255, 255, 0.441);
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .labelled{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+  }
+  .label {
+	padding: 20px 30px; /* Adjust padding for smaller screens */
+	font-size: 28px; /* Decrease font size for smaller screens */
+	font-weight: bold;
+	color: black;
+  }
+  
+  .login_form {
+	padding: 20px;
+  }
+  
+  .login_form .font {
+	font-size: 18px;
+	color: black;
+	margin: 5px 0;
+  }
+  
+  .login_form input {
+	height: 40px;
+	width: 100%;
+	padding: 0 10px; /* Increase padding for smaller screens */
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+	margin-bottom: 10px; /* Add some spacing between inputs */
+  }
+  
+  .login_form .font2 {
+	margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+  
+  .login_form button {
+	margin: 50px 0;
+	height: 45px;
+	width: 100%;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: black;
+	border-radius: 15px;
+	border: 1px solid black;
+	transition: .5s;
+  }
+  
+  .login_form button:hover {
+	background: rgb(44, 44, 44);
+  }
+  
+  .login_form #email_error,
+  .login_form #pass_error {
+	margin-top: 5px;
+	width: 100%;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255, 0, 0, 0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+	.container {
+	  max-width: 90%; /* Reduce max-width for smaller screens */
+	}
+  
+	.label {
+	  font-size: 24px; /* Further decrease font size for smaller screens */
+	}
+  
+	.login_form input {
+	  padding: 0 8px; /* Adjust padding for smaller screens */
+	}
+
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding: 8px;
+}
+.nav-logo{
+    text-transform: capitalize;
+    color: #212432;
+    padding-left: 15px;
+    font-style: bold;
+    font-size: x-large;
+}
+.box {
+    background: #d5f5fe;
+    justify-content: center;
+    color: #212432;
+    align-items: center;
+    height: 730px;
+    width: 1950px;
+}
+.quote h1{
+    padding-top: 300px;
+    margin-left: 300px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    margin-inline: 15px;
+    padding: 10px;
+    
+}
+.img{
+    width: 35px;
+    padding-top: 5px;
+    color: white;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #212432;
+    padding-top: 10px;
+    font-size: x-large;
+    transition: ease 0.175s;
+}
+nav ul li a:hover{
+    color: gray;
+}
+.active{
+    color: gray;
+}
+.card{
+    width: 30%;
+    height: 500px;
+    background: grey;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-inline: 10px;
+}
+
+section li{
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+    align-items: center
+}
+
+section li a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    transition: ease 0.175s;
+}
+section li a:hover{
+    color: white;
+}
+
+section h1{
+    font-size: 50px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card:hover{
+    transform: scale(0.9);
+}
+
+.contain{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    padding: 8px;
+}
+
+
+section ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section ul li{
+    margin-inline:25px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+section ul li a{
+    text-decoration: none;
+    justify-content: center;
+    color: #212432;
+    padding-top: 20px;
+    font-size: x-large;
+    transition: ease 0.175s;
+}
+section ul li a:hover{
+    color: gray;
+}
+
+
+.main-container{
+    background: #d5f5fe;
+    width: 100%;
+    padding-left: 15px;
+    margin: auto;
+}
+.card_container{
+    width: 200px;
+    height: 600px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.804);
+    margin: 20px;
+}
+h2{
+    padding-left: 20px;
+    color: #212432;
+}
+.workouts, .intro , .work{
+    color: #212432;
+    font-size: x-large;
+
+}
+.work{
+    list-style-type: none;
+}
+.workouts p{
+    color: #212432;
+}
+
+.workouts ul{
+    list-style-type: circle;
+    justify-content: center;
+    align-items: center;
+}
+.workouts ul li{
+    margin-inline:25px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.work li {
+    color: #212432;
+    margin-inline:25px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+
+.workouts ul li a{
+    text-decoration: none;
+    justify-content: center;
+    color: #212432;
+    padding-top: 20px;
+    font-size: x-large;
+    transition: ease 0.175s;
+}
+.workouts ul li a:hover{
+    color: gray;
+}

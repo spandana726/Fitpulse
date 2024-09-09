@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FitPulse</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">Log In</h1>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email</div>
+			<input autocomplete="off" type="email" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<a href="http://127.0.0.1:5500/home.html"><button type="submit">Login</button></a>
+			<div id="g_id_onload"
+     data-client_id="955808850698-4glhnkal889ngkijp1suaka61st4gd7e.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-login_uri="http://localhost:5500"
+     data-auto_prompt="false">
+</div>
+<!-- Sign-in with google btn  -->
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="pill"
+     data-theme="outline"
+     data-text="signin_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+		</form>
+	</div>	
+	<script src="valid.js"></script>
+	<script src="https://accounts.google.com/gsi/client" async></script>
+	<script>
+		window.embeddedChatbotConfig = {
+		chatbotId: "_EsYUD12iRJdcP0CxwueC",
+		domain: "www.chatbase.co"
+		}
+		</script>
+		<script
+		src="https://www.chatbase.co/embed.min.js"
+		chatbotId="_EsYUD12iRJdcP0CxwueC"
+		domain="www.chatbase.co"
+		defer>
+		</script>
+</body>
+</html>

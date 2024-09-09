@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPulse</title>
+    <link rel="stylesheet" href="nutrition.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-logo">
+                <h1>
+                    FitPulse
+                </h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/home/home.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/Fitness/fitness.html">Fitness</a></li>
+                    <li><a class="active" href="http://127.0.0.1:5500/Calories/nutrition.html">Calories</a></li>
+                    <li><a href="http://127.0.0.1:5500/Login/acc.html"><img class="img" src="./user.png" alt="#"></a></li>
+                </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="background">
+        <div class="bmr-calculator">
+            <h2>BMR Calculator</h2>
+            <div class="controls">
+                <form>
+                    <h3>Age</h3>
+                    <input class="Age" type="text" id="Age" />
+
+                    <div class="gender">
+                        <h3>Gender</h3>
+                        <input type="radio" id="male" value="male" name="gender"  checked />
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" value="female" name="gender" />
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="height">
+                        <h3>Height</h3>
+                        <input type="text" id="height" />
+                        <div class="unit">cm</div>
+                    </div>
+                    <div class="weight">
+                        <h3>Weight</h3>
+                        <input type="text" id="weight" />
+                        <div class="unit">Kg</div>
+                    </div>
+                </form>
+            </div>
+            <div class="result">
+                <button class="calculate-btn" onclick="Btnclick()" id="btn">Calculate</button>
+                <div class="result-message">
+                    <span class="calories" id="calories"></span> Calories/day
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div style="overflow-x: auto;">
+        <table class="Maintain" cellspacing="30px">
+            <tr>
+                <td>
+                    <h3>Maintainance Calories &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<span id="main">BMR </span></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Weight Lose Calories &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span id="losew">BMR </span></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Weight Gain Calories &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span id="gainw">BMR </span></h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="nutrition.js"></script>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "_EsYUD12iRJdcP0CxwueC",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="_EsYUD12iRJdcP0CxwueC"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+</html>
